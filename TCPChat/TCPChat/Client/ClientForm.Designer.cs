@@ -41,6 +41,7 @@
             this.lstMess.Size = new System.Drawing.Size(575, 287);
             this.lstMess.TabIndex = 0;
             this.lstMess.UseCompatibleStateImageBehavior = false;
+            this.lstMess.View = System.Windows.Forms.View.List;
             // 
             // txtMess
             // 
@@ -49,6 +50,7 @@
             this.txtMess.Name = "txtMess";
             this.txtMess.Size = new System.Drawing.Size(500, 37);
             this.txtMess.TabIndex = 1;
+            this.txtMess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMess_KeyPress);
             // 
             // btnSend
             // 

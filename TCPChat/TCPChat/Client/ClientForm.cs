@@ -31,14 +31,14 @@ namespace Client
 
         void connect()
         {
-            try
-            {
-                m_clientSocket.Connect(m_remoteEP);
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //try
+            //{
+            //    m_clientSocket.Connect(m_remoteEP);
+            //}
+            //catch(Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
 
             Thread listen = new Thread(receive);
             listen.IsBackground = true;
@@ -49,7 +49,8 @@ namespace Client
         {
             byte[] data = Encoding.UTF8.GetBytes(txtMess.Text);
             m_clientSocket.Send(data);
-            lstMess.Items.Add(txtMess.Text);
+            lstMess.Items.Add(txtMess.Text + "\n");
+            txtMess.Clear();
         }
 
         void receive()
@@ -59,13 +60,21 @@ namespace Client
             byte[] buffer = new byte[1024];
             m_clientSocket.Receive(buffer);
             string m = Encoding.UTF8.GetString(buffer);
-            lstMess.Items.Add(m);
+            lstMess.Items.Add(m + "\n");
             }
         }
 
         private void btnSend_Click(object sender, EventArgs e)
         {
             send();
+        }
+
+        private void txtMess_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btnSend_Click(sender, e);
+            }
         }
     }
 }

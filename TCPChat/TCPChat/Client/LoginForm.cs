@@ -73,5 +73,11 @@ namespace Client
                 btnLogin.Enabled = false;
         }
 
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            txtUsername_TextChanged((object)sender, e);
+            txtIPadd_TextChanged(sender, e);
+            txtPort_TextChanged(sender, e);
+        }
     }
 }
