@@ -44,5 +44,34 @@ namespace Client
                 MessageBox.Show(ex.Message);
             }
         }
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Length > 0 && txtIPadd.Text.Length > 0 && txtPort.Text.Length > 0)
+                btnLogin.Enabled = true;
+            else
+                btnLogin.Enabled = false;
+        }
+
+        private void txtIPadd_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Length > 0 && txtIPadd.Text.Length > 0 && txtPort.Text.Length > 0)
+                btnLogin.Enabled = true;
+            else
+                btnLogin.Enabled = false;
+        }
+
+        private void txtPort_TextChanged(object sender, EventArgs e)
+        {
+            if (txtUsername.Text.Length > 0 && txtIPadd.Text.Length > 0 && txtPort.Text.Length > 0)
+                btnLogin.Enabled = true;
+            else
+                btnLogin.Enabled = false;
+        }
+
     }
 }

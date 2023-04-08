@@ -28,27 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.lstMess = new System.Windows.Forms.ListView();
+            this.txtMess = new System.Windows.Forms.TextBox();
             this.btnSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // listView1
+            // lstMess
             // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(12, 12);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(575, 287);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.lstMess.HideSelection = false;
+            this.lstMess.Location = new System.Drawing.Point(12, 12);
+            this.lstMess.Name = "lstMess";
+            this.lstMess.Size = new System.Drawing.Size(575, 287);
+            this.lstMess.TabIndex = 0;
+            this.lstMess.UseCompatibleStateImageBehavior = false;
             // 
-            // textBox1
+            // txtMess
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 305);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(500, 37);
-            this.textBox1.TabIndex = 1;
+            this.txtMess.Location = new System.Drawing.Point(12, 305);
+            this.txtMess.Multiline = true;
+            this.txtMess.Name = "txtMess";
+            this.txtMess.Size = new System.Drawing.Size(500, 37);
+            this.txtMess.TabIndex = 1;
             // 
             // btnSend
             // 
@@ -65,8 +65,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(599, 354);
             this.Controls.Add(this.btnSend);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.txtMess);
+            this.Controls.Add(this.lstMess);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ClientForm";
             this.Text = "CLIENT";
@@ -77,8 +77,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListView lstMess;
+        private System.Windows.Forms.TextBox txtMess;
         private System.Windows.Forms.Button btnSend;
     }
 }

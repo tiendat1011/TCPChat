@@ -64,6 +64,7 @@
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(180, 20);
             this.txtUsername.TabIndex = 2;
+            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
             // txtIPadd
             // 
@@ -71,6 +72,7 @@
             this.txtIPadd.Name = "txtIPadd";
             this.txtIPadd.Size = new System.Drawing.Size(180, 20);
             this.txtIPadd.TabIndex = 2;
+            this.txtIPadd.TextChanged += new System.EventHandler(this.txtIPadd_TextChanged);
             // 
             // btnLogin
             // 
@@ -90,6 +92,7 @@
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // label3
             // 
@@ -107,6 +110,7 @@
             this.txtPort.Name = "txtPort";
             this.txtPort.Size = new System.Drawing.Size(89, 20);
             this.txtPort.TabIndex = 2;
+            this.txtPort.TextChanged += new System.EventHandler(this.txtPort_TextChanged);
             // 
             // LoginForm
             // 

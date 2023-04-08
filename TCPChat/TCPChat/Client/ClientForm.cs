@@ -25,5 +25,22 @@ namespace Client
             InitializeComponent();
         }
 
+        void send(Socket client)
+        {
+            byte[] data = Encoding.UTF8.GetBytes(txtMess.Text);
+            client.Send(data);
+            lstMess.Items.Add(txtMess.Text);
+        }
+
+        void receive(Socket client)
+        {
+            while (true)
+            {
+            byte[] buffer = new byte[1024];
+            client.Receive(buffer);
+            string m = Encoding.UTF8.GetString(buffer);
+            lstMess.Items.Add(m);
+            }
+        }
     }
 }
