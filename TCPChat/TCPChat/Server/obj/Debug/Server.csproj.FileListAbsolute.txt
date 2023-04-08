@@ -9,3 +9,14 @@ C:\Users\Long Nguyen\Desktop\Lập trình mạng căn bản\Week 4\TCPChat\TCPCh
 C:\Users\Long Nguyen\Desktop\Lập trình mạng căn bản\Week 4\TCPChat\TCPChat\Server\bin\Debug\Server.pdb
 C:\Users\Long Nguyen\Desktop\Lập trình mạng căn bản\Week 4\TCPChat\TCPChat\Server\obj\Debug\Server.exe
 C:\Users\Long Nguyen\Desktop\Lập trình mạng căn bản\Week 4\TCPChat\TCPChat\Server\obj\Debug\Server.pdb
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\bin\Debug\Server.exe.config
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\bin\Debug\Server.exe
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\bin\Debug\Server.pdb
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.csproj.AssemblyReference.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.csproj.SuggestedBindingRedirects.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.Properties.Resources.resources
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.ServerForm.resources
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.csproj.GenerateResource.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.exe
+E:\C#\github\TCPChat\TCPChat\TCPChat\Server\obj\Debug\Server.pdb

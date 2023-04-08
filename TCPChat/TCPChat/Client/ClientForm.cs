@@ -9,6 +9,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Threading;
 
 namespace Client
 {
@@ -23,24 +25,47 @@ namespace Client
         public ClientForm()
         {
             InitializeComponent();
+            CheckForIllegalCrossThreadCalls = false;
+            connect();
         }
 
-        void send(Socket client)
+        void connect()
+        {
+            try
+            {
+                m_clientSocket.Connect(m_remoteEP);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            Thread listen = new Thread(receive);
+            listen.IsBackground = true;
+            listen.Start();
+        }
+
+        void send()
         {
             byte[] data = Encoding.UTF8.GetBytes(txtMess.Text);
-            client.Send(data);
+            m_clientSocket.Send(data);
             lstMess.Items.Add(txtMess.Text);
         }
 
-        void receive(Socket client)
+        void receive()
         {
             while (true)
             {
             byte[] buffer = new byte[1024];
-            client.Receive(buffer);
+            m_clientSocket.Receive(buffer);
             string m = Encoding.UTF8.GetString(buffer);
             lstMess.Items.Add(m);
             }
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            send();
         }
     }
 }
