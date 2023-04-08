@@ -30,10 +30,12 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtIPadd = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPort = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -56,47 +58,67 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "IP address";
             // 
-            // textBox1
+            // txtUsername
             // 
-            this.textBox1.Location = new System.Drawing.Point(103, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(180, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtUsername.Location = new System.Drawing.Point(103, 51);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(180, 20);
+            this.txtUsername.TabIndex = 2;
             // 
-            // textBox2
+            // txtIPadd
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 2;
+            this.txtIPadd.Location = new System.Drawing.Point(103, 94);
+            this.txtIPadd.Name = "txtIPadd";
+            this.txtIPadd.Size = new System.Drawing.Size(180, 20);
+            this.txtIPadd.TabIndex = 2;
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(103, 130);
+            this.btnLogin.Location = new System.Drawing.Point(103, 170);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(75, 23);
             this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(208, 130);
+            this.btnClose.Location = new System.Drawing.Point(208, 170);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(75, 23);
             this.btnClose.TabIndex = 4;
             this.btnClose.Text = "Cancel";
             this.btnClose.UseVisualStyleBackColor = true;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F);
+            this.label3.Location = new System.Drawing.Point(13, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 16);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Port";
+            // 
+            // txtPort
+            // 
+            this.txtPort.Location = new System.Drawing.Point(103, 133);
+            this.txtPort.Name = "txtPort";
+            this.txtPort.Size = new System.Drawing.Size(89, 20);
+            this.txtPort.TabIndex = 2;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(306, 186);
+            this.ClientSize = new System.Drawing.Size(306, 222);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPort);
+            this.Controls.Add(this.txtIPadd);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "LoginForm";
@@ -110,9 +132,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtIPadd;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtPort;
     }
 }

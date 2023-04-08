@@ -1,0 +1,12 @@
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\bin\Debug\Client.exe.config
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\bin\Debug\Client.exe
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\bin\Debug\Client.pdb
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.ClientForm.resources
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.LoginForm.resources
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.Properties.Resources.resources
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.csproj.GenerateResource.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.exe
+E:\C#\github\TCPChat\TCPChat\TCPChat\Client\obj\Debug\Client.pdb

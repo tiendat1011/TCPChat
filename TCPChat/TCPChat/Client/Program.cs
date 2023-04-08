@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -16,7 +17,21 @@ namespace Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ClientForm());
+            
+            LoginForm loginform = new LoginForm();
+            Application.Run(loginform);
+
+            if (loginform.DialogResult == DialogResult.OK)
+            {
+                ClientForm clientform = new ClientForm();
+                clientform.m_clientSocket = loginform.clientSocket;
+                clientform.m_ipAdress = loginform.ipAdress;
+                clientform.m_port = loginform.port;
+                clientform.m_remoteEP = loginform.remoteEP;
+                clientform.m_user = loginform.user;
+
+                clientform.ShowDialog();
+            }
         }
     }
 }
